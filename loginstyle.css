@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .topbar {
+    display: flex;
+    align-items: center;
+    background-color: #c5f3ff;
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+  
+  .topbar input {
+    padding: 5px 10px;
+  }
+  
+  .topbar nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .forms-section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 20px;
+  }
+  
+  .form-box {
+    background-color: #b3f0ff;
+    padding: 20px;
+    border: 2px solid #000;
+  }
+  
+  .btn {
+    background-color: #ffeb6b;
+    border: 1px solid #aaa;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .bottom-link {
+    text-align: center;
+  }
+  
+  .sidebar {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffff99;
+    padding: 15px;
+    border: 2px solid #000;
+  }
+  
+  .mini-form {
+    background-color: #b3f0ff;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+  
+  .note {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #aaffc7;
+    padding: 15px 20px;
+    margin-top: 40px;
+  }
+  
+  .footer-box h4 {
+    margin: 0 0 10px 0;
+  }
+  

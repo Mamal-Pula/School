@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فیلم های آموزشیت لذت آموختن دانشمندان</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .header-nav {
+            background: linear-gradient(135deg, #81d4fa, #4fc3f7);
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .nav-item {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-item:hover {
+            background: rgba(255,255,255,0.3);
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .logo {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #ff6b6b, #ffa726);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .main-content {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 30px 0;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+        
+        .welcome-section {
+            background: linear-gradient(135deg, #fff59d, #ffeb3b);
+            padding: 40px;
+            text-align: center;
+            margin: 30px 0;
+            border-radius: 15px;
+        }
+        
+        .welcome-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .welcome-subtitle {
+            font-size: 18px;
+            color: #666;
+        }
+        
+        .video-slider {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .video-item {
+            background: linear-gradient(135deg, #4dd0e1, #26c6da);
+            height: 150px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .video-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .video-title {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #c8e6c9, #81c784);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+        
+        .contact-info {
+            text-align: center;
+            color: #333;
+        }
+        
+        .contact-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .sidebar-frame {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .frame-title {
+            background: linear-gradient(135deg, #fff59d, #ffeb3b);
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .frame-content {
+            height: 120px;
+            background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .carousel-control-prev, .carousel-control-next {
+            background: rgba(0,0,0,0.3);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .mini-school-img {
+            width: 80px;
+            height: 50px;
+            border-radius: 5px;
+            margin: 0 auto 10px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-nav">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <div class="logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <span class="ms-3 fw-bold">فیلم های آموزشیت لذت آموختن دانشمندان</span>
+                </div>
+                <div class="d-flex">
+                    <a href="index.html" class="nav-item">صفحه اصلی</a>
+                    <a href="login.html" class="nav-item">ورود</a>
+                    <a href="educ.html" class="nav-item">فیلم های آموزشی</a>
+                    <a href="educ1.html" class="nav-item">تست آنلاین</a>
+                    <a href="video.html" class="nav-item">پیشنهادی</a>
+                    <a href="#" class="nav-item"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="main-content">
+                    <div class="hero-image">
+                        <img src="images/school1.jpg" alt="Hero Image">
+                        <div class="position-absolute bottom-0 start-0 p-3">
+                            <small class="text-dark bg-white px-2 py-1 rounded">
+                                مطالعه آموزشی فیلم یا طراحی
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="welcome-section">
+                    <h2 class="welcome-title">به مدرسه ی ستاره های فردا</h2>
+                    <p class="welcome-subtitle">خوش آمدید</p>
+                </div>
+
+                <div class="video-slider">
+                    <h3 class="text-center mb-4">عنوان فیلم</h3>
+                    <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="video-item">
+                                            <i class="fas fa-play fa-2x"></i>
+                                        </div>
+                                        <div class="video-title">نمونه فیلم اول در ریاضیات</div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="video-item">
+                                            <i class="fas fa-play fa-2x"></i>
+                                        </div>
+                                        <div class="video-title">نمونه فیلم دوم در ریاضیات</div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="video-item">
+                                            <i class="fas fa-play fa-2x"></i>
+                                        </div>
+                                        <div class="video-title">نمونه فیلم سوم در ریاضیات</div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="video-item">
+                                            <i class="fas fa-play fa-2x"></i>
+                                        </div>
+                                        <div class="video-title">نمونه فیلم چهارم در ریاضیات</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="video-item">
+                                            <i class="fas fa-play fa-2x"></i>
+                                        </div>
+                                        <div class="video-title">نمونه فیلم پنجم در ریاضیات</div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="video-item">
+                                            <i class="fas fa-play fa-2x"></i>
+                                        </div>
+                                        <div class="video-title">نمونه فیلم ششم در ریاضیات</div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="video-item">
+                                            <i class="fas fa-play fa-2x"></i>
+                                        </div>
+                                        <div class="video-title">نمونه فیلم هفتم در ریاضیات</div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="video-item">
+                                            <i class="fas fa-play fa-2x"></i>
+                                        </div>
+                                        <div class="video-title">نمونه فیلم هشتم در ریاضیات</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="contact-section">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="contact-info">
+                                <div class="contact-title">ارتباط با ما</div>
+                                <div>www.setareha.com</div>
+                                <div>021 33345000</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="contact-info">
+                                <div class="contact-title">پشتیبانی</div>
+                                <div>info@setareha.com</div>
+                                <div>تلفن: 021-33345001</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <!-- Frame 2 -->
+                <div class="sidebar-frame">
+                    <div class="frame-title">فیلم های آموزشی لذت آموختن دانشمندان</div>
+                    <div class="frame-content">
+                        <img src="images/school1.jpg" class="mini-school-img" alt="Mini School Image">
+                        <div>محتوای آموزشی</div>
+                    </div>
+                </div>
+
+                <!-- Frame 3 -->
+                <div class="sidebar-frame">
+                    <div class="frame-title">به مدرسه ی ستاره های فردا خوش آمدید</div>
+                    <div class="frame-content">
+                        <img src="images/school1.jpg" class="mini-school-img" alt="Mini School Image">
+                        <div>اطلاعات مدرسه</div>
+                    </div>
+                </div>
+
+                <!-- Frame 4 -->
+                <div class="sidebar-frame">
+                    <div class="frame-title">فیلم های آموزشی لذت آموختن دانشمندان</div>
+                    <div class="frame-content">
+                        <img src="images/school1.jpg" class="mini-school-img" alt="Mini School Image">
+                        <div>ویدیوهای آموزشی</div>
+                    </div>
+                </div>
+
+                <!-- Frame 5 -->
+                <div class="sidebar-frame">
+                    <div style="background: linear-gradient(135deg, #fff59d, #ffeb3b); height: 80px; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                        <div style="background: linear-gradient(135deg, #4dd0e1, #26c6da); width: 60px; height: 40px; border-radius: 5px;"></div>
+                    </div>
+                </div>
+
+                <!-- Frame 6 -->
+                <div class="sidebar-frame">
+                    <div class="frame-title">شماره پریا ها</div>
+                    <div class="contact-info">
+                        <div style="color: #666; font-size: 14px;">تماس: 021-33345000</div>
+                        <div style="color: #666; font-size: 14px;">ایمیل: info@setareha.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

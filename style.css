@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    direction: rtl;
+    background: #f9f9f9;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  /* ==== Sidebar ==== */
+  .sidebar {
+    width: 250px;
+    background: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .sidebar-header {
+    text-align: center;
+  }
+  
+  .sidebar-header img {
+    width: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .sidebar-frame {
+    border: 1px solid #ccc;
+    margin: 15px 0;
+    padding: 10px;
+  }
+  
+  .sidebar-frame h4 {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 5px;
+  }
+  
+  .sidebar-frame img {
+    width: 100%;
+    border: 1px solid #aaa;
+    margin-bottom: 5px;
+  }
+  
+  .sidebar-frame .thumb {
+    background: cyan;
+    height: 100px;
+    width: 100%;
+  }
+  
+  .sidebar-frame.yellow {
+    background: #fff89a;
+  }
+  
+  .sidebar-frame.green {
+    background: #ccffcc;
+  }
+  
+  /* ==== Main Content ==== */
+  .main-content {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d0f0ff;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .logo img {
+    width: 40px;
+  }
+  
+  nav a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .search-box input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Slider */
+  .slider {
+    text-align: center;
+  }
+  
+  .slider img {
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .welcome {
+    background: #ffffaa;
+    margin: 10px auto;
+    padding: 15px;
+    font-weight: bold;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  /* Videos */
+  .videos {
+    margin-top: 20px;
+  }
+  
+  .videos h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .card {
+    width: 120px;
+    text-align: center;
+    background: white;
+  }
+  
+  .thumb {
+    background: cyan;
+    height: 100px;
+  }
+  
+  .arrow {
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 30px;
+    background: #ccffcc;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>فیلم آموزشی</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: white;
+      font-family: sans-serif;
+    }
+    .navbar {
+      background-color: #b2ebf2;
+    }
+    .nav-link {
+      color: black !important;
+      font-weight: bold;
+    }
+    .suggestion-box {
+      background-color: #fff176;
+      height: 70px;
+      margin-bottom: 15px;
+    }
+    .video-main {
+      background-color: #fff176;
+      height: 200px;
+      margin: 0 auto;
+    }
+    .description {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      height: 40px;
+      margin-top: 10px;
+    }
+    .comment-area {
+      background-color: #dcedc8;
+      padding: 20px;
+    }
+    .comment {
+      background-color: #fff176;
+      padding: 10px;
+      border-radius: 25px;
+      width: fit-content;
+      margin-bottom: 10px;
+    }
+    .btn-add {
+      background-color: #fff176;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .mobile-suggestions {
+      border: 2px solid #29b6f6;
+      padding: 10px;
+      background-color: #b2ebf2;
+      text-align: center;
+    }
+    .arrow-btn {
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg px-4" style="background-color: #b2ebf2;">
+        <div class="container-fluid justify-content-end">
+          <ul class="navbar-nav flex-row gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">صفحه اصلی</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">ثبت‌نام</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">ورود</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="video.html">پیشنهادی</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+
+<!-- Desktop Layout -->
+<div class="container-fluid mt-3 d-none d-lg-block">
+  <div class="row">
+    <!-- Sidebar Suggestions -->
+    <div class="col-3" style="background-color:#b2ebf2;">
+      <h6 class="text-center fw-bold mt-2">فیلم‌های پیشنهادی</h6>
+      <div class="suggestion-box"></div>
+      <div class="suggestion-box"></div>
+      <div class="suggestion-box"></div>
+      <hr />
+      <hr />
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-9">
+      <div style="background-color:#b2ebf2;" class="p-3">
+        <div class="video-main"></div>
+        <div class="description mt-3"></div>
+        <p class="mt-2">توضیحات:</p>
+      </div>
+
+      <div class="comment-area mt-3">
+        <h6 class="fw-bold">کامنت‌های شما</h6>
+        <div class="comment">کامنت اول</div>
+        <div class="comment">کامنت دوم</div>
+        <button class="btn-add">+ افزودن کامنت</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Layout -->
+<div class="container-fluid mt-3 d-block d-lg-none">
+  <!-- Top Section -->
+  <div style="background-color:#b2ebf2;" class="p-3">
+    <div class="video-main"></div>
+  </div>
+
+  <div class="mobile-suggestions mt-3">
+    <h6>فیلم‌های پیشنهادی</h6>
+    <div class="suggestion-box mx-auto"></div>
+  </div>
+
+  <div class="text-center mt-2 d-flex justify-content-around">
+    <span class="arrow-btn">&lt;</span>
+    <span class="arrow-btn">&gt;</span>
+  </div>
+
+  <div class="comment-area mt-3">
+    <h6 class="fw-bold">کامنت‌های شما</h6>
+    <div class="comment mx-auto">کامنت اول</div>
+    <div class="comment mx-auto">کامنت دوم</div>
+    <button class="btn-add d-block mx-auto">+ افزودن کامنت</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

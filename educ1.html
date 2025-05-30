@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه فیلتر پیشرفته</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f8f9fa;
+            direction: rtl;
+        }
+        
+        .header-nav {
+            background: linear-gradient(135deg, #81d4fa, #4fc3f7);
+            padding: 10px 0;
+            border-radius: 0 0 15px 15px;
+            margin-bottom: 20px;
+        }
+        
+        .filter-section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .filter-header {
+            background: linear-gradient(135deg, #b3e5fc, #81d4fa);
+            margin: -20px -20px 20px -20px;
+            padding: 15px 20px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .yellow-btn {
+            background-color: #fff59d;
+            border: 1px solid #f9a825;
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+            margin: 2px;
+            display: inline-block;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .yellow-btn:hover, .yellow-btn.active {
+            background-color: #fff176;
+            transform: translateY(-1px);
+        }
+        
+        .green-btn {
+            background-color: #c8e6c9;
+            border: 1px solid #4caf50;
+            color: #333;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+            margin: 2px;
+            display: inline-block;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .green-btn:hover, .green-btn.active {
+            background-color: #a5d6a7;
+            transform: translateY(-1px);
+        }
+        
+        .action-btn {
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: 500;
+            margin: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .ok-btn {
+            background-color: #fff59d;
+            border: 1px solid #f9a825;
+            color: #333;
+        }
+        
+        .cancel-btn {
+            background-color: #ffcdd2;
+            border: 1px solid #f44336;
+            color: #333;
+        }
+        
+        .sidebar-section {
+            background-color: #e0f2f1;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar-item {
+            background-color: #fff59d;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #f9a825;
+            text-align: center;
+        }
+        
+        .nav-item {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .nav-item:hover {
+            color: #333;
+        }
+        
+        .filter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .bottom-section {
+            background-color: #c8e6c9;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-nav">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="educ.html" class="nav-item">فیلتر های آموزشی</a>
+                <a href="login.html" class="nav-item">ثبت نام</a>
+                <a href="login.html" class="nav-item">ورود</a>
+                <a href="video.html" class="nav-item">پیشنهادی</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-section">
+                    <h6 class="text-center mb-3">فیلتر ها</h6>
+                    <div class="sidebar-item">پله تحصیلی</div>
+                    <div class="sidebar-item">نام درس</div>
+                    <div class="sidebar-item">دبیر مربوطه</div>
+                    <div class="sidebar-item">سطح سختی</div>
+                    <div class="sidebar-item">کیفیت</div>
+                    <div class="sidebar-item">امتیاز و محبوبیت</div>
+                    <div class="sidebar-item">بازار ترین</div>
+                    <div class="sidebar-item">جدیدترین</div>
+                    <div class="sidebar-item">محبوب آنلاین</div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h6 class="text-center mb-3">پیشنهادی</h6>
+                    <div class="text-center">
+                        <span>درباره ما</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="filter-section">
+                    <div class="filter-header">پله تحصیلی</div>
+                    <div class="filter-grid">
+                        <button class="yellow-btn">پله اول</button>
+                        <button class="yellow-btn">پله دوم</button>
+                        <button class="yellow-btn">پله سوم</button>
+                        <button class="yellow-btn">پله چهارم</button>
+                        <button class="yellow-btn">پله پنجم</button>
+                        <button class="yellow-btn">پله ششم</button>
+                    </div>
+                    <div class="text-center">
+                        <span class="fw-bold">مدت زمان</span>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-header">سطح سختی</div>
+                    <div class="filter-grid">
+                        <button class="yellow-btn">فارسی</button>
+                        <button class="yellow-btn">ریاضی</button>
+                        <button class="yellow-btn">علوم</button>
+                        <button class="yellow-btn">دین</button>
+                        <button class="yellow-btn">نگارش</button>
+                        <button class="yellow-btn">هنر</button>
+                    </div>
+                    <div class="text-center">
+                        <span class="fw-bold">سطح سختی</span>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-header">دبیر مربوطه</div>
+                    <div class="filter-grid">
+                        <button class="yellow-btn">نام درس</button>
+                        <button class="yellow-btn">متوسطه</button>
+                        <button class="yellow-btn">سخت</button>
+                    </div>
+                    <div class="text-center">
+                        <span class="fw-bold">مدت زمان</span>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="filter-header">کیفیت</div>
+                            <div class="d-flex flex-column">
+                                <button class="yellow-btn mb-2">720</button>
+                                <button class="yellow-btn mb-2">480</button>
+                                <button class="yellow-btn">240</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="filter-header">سطح سختی</div>
+                            <div class="d-flex flex-column">
+                                <button class="yellow-btn mb-2">آسان</button>
+                                <button class="yellow-btn mb-2">متوسطه</button>
+                                <button class="yellow-btn">سخت</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="filter-header">مدت زمان</div>
+                            <div class="d-flex flex-column">
+                                <button class="yellow-btn mb-2">5 min</button>
+                                <button class="yellow-btn mb-2">5-10 min</button>
+                                <button class="yellow-btn">10-15 min</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="text-center mb-3">
+                                <span class="fw-bold">محبوب ترین</span>
+                            </div>
+                            <button class="green-btn w-100">محبوب ترین</button>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center mb-3">
+                                <span class="fw-bold">جدیدترین</span>
+                            </div>
+                            <button class="green-btn w-100">جدیدترین</button>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-center mb-3">
+                                <span class="fw-bold">پربازدیدترین</span>
+                            </div>
+                            <button class="green-btn w-100">پربازدیدترین</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center my-4">
+                    <button class="action-btn cancel-btn">cancel</button>
+                    <button class="action-btn ok-btn">OK</button>
+                </div>
+
+                <div class="bottom-section">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>پیشنهادی</h6>
+                            <hr>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>درباره ما</h6>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
